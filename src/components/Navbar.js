@@ -1,9 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-function Navbar({ children }) {
+function Navbar({theme,setTheme, children }) {
+    console.log(theme)
     return (
-        <div class="drawer drawer-end">
+        <div class="drawer drawer-end bg-primary">
             <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
             <div class="drawer-content flex flex-col">
                 {/* <!-- Navbar --> */}
@@ -23,6 +24,9 @@ function Navbar({ children }) {
                             <li><NavLink to='/about' className='rounded-lg'>About</NavLink></li>
                             <li><NavLink to='/contact' className='rounded-lg'>Contact Us</NavLink></li>
                             <li><NavLink to='/login' className='rounded-lg'>Login</NavLink></li>
+                            <li>
+                            <button onClick={()=>setTheme(!theme)}>theme</button>
+                            </li>
                             <li class="dropdown dropdown-end dropdown-hover">
                                 <label tabindex="0" class="btn btn-outline rounded-lg hover:bg-red-500">Book Now</label>
                                 <ul tabindex="0" class="dropdown-content menu p-2 my-1 shadow bg-base-100 rounded-box w-52">
