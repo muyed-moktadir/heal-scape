@@ -1,11 +1,11 @@
 import React from "react";
-import doctorp from "../../assets/images/doctorp.png"
-import dd from "../../assets/images/dd.gif"
+import doctorp from "../../assets/images/doctorp.png";
+import dd from "../../assets/images/dd.gif";
 
 const LandingPage = () => {
   return (
     <>
-      <div className="hero min-h-screen bg-base-200 mt-16 z-[-1]">
+      <div className="hero bg-accent mt-16">
         <div className="hero-content flex-col lg:flex-row">
           <div>
             <h1 className="text-5xl font-bold">Box Office News!</h1>
@@ -16,7 +16,7 @@ const LandingPage = () => {
             </p>
             <button className="btn btn-primary">Get Started</button>
           </div>
-         <img src={dd} class="max-w-sm" alt=""/>
+          <img src={dd} class="max-w-sm" alt="" />
         </div>
       </div>
     </>
