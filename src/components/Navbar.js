@@ -8,7 +8,7 @@ function Navbar({ theme, setTheme, children }) {
       <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content flex flex-col">
         {/* //TODO:<!-- Navbar --> */}
-        <div class="w-full navbar bg-gradient-to-r from-[#97BAEE] to-[#EE94CF] fixed top-0 z-50  lg:px-20">
+        <div class="w-full navbar bg-gradient-to-r from-[#ebb5b5] to-[#f0bef7] fixed top-0 z-50  lg:px-20">
           <div class="flex-1 px-2 mx-2 text-2xl">Heal-Scape</div>
           <div class="flex-none lg:hidden">
             <label for="my-drawer-3" class="btn btn-square btn-ghost">

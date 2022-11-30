@@ -11,3 +11,4 @@ import Services from "../pages/Services";
     {path:"/contact", name:"Contact", Component: Contact},
     {path:"/login", name:"Login", Component: Login},
   ]
+  
